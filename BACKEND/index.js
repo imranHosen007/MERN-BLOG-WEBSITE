@@ -12,7 +12,10 @@ config({
 });
 
 const corsOptions = {
-  origin: [`http://localhost:5173`],
+  origin: [
+    `http://localhost:5173`,
+    "https://mern-blog-website-frontend-vert.vercel.app",
+  ],
   credentials: true,
 };
 app.use(cors(corsOptions));
