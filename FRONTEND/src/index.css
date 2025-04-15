@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+  @apply px-6 py-3 text-xl text-white capitalize bg-black rounded-full whitespace-nowrap hover:bg-opacity-80;
+}
+.section{
+  @apply py-4 px-[5vw] md:px-[7vw] lg:px-[10vw];
+}
+.h-cover{
+  @apply min-h-[calc(100vh-80px)];
+}
+.input-box{
+  @apply w-full text-sm text-gray-800 border border-gray-300 px-4 py-3 rounded-md outline-blue-600 bg-gray-200 focus:bg-transparent
+}
+
+#textEditor h2, h2{
+  @apply text-4xl leading-normal font-bold max-md:text-3xl max-md:leading-snug !important;
+}
+
+#textEditor h3, h3 {
+  @apply text-3xl leading-loose max-md:text-2xl max-md:leading-normal !important;
+}
+
+#textEditor *, .blog-page-content *{
+  @apply  text-xl leading-10 md:text-2xl;
+}
+
+#textEditor a, .blog-page-content a{
+  @apply text-purple-500 underline hover:opacity-50;
+}
+
+.ce-block__content, .ce-toolbar__content{
+  max-width: 900px;
+}
+
+
+.cdx-settings-button[data-tune='withBorder'],
+.cdx-settings-button[data-tune='withBackground'],
+.cdx-settings-button[data-tune='stretched'] {
+  display: none;
+}
